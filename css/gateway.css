@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat';
+    color: black;
+    text-decoration: inherit;
+}
+
+.header-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.global-header {
+    width: 100%;
+    min-height: 50px;
+    height: max-content;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .gateway-logo {
+        width: 100%;
+        height: max-content;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        font-weight: 500;
+        color: #000;
+        font-size: 30px;
+    }
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-text {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 50px;
+        gap: 10px;
+    }
+
+    .lottie-animation1 {
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text span {
+    font-size: 30px;
+}
+
+.btns {
+    width: max-content;
+    height: max-content;
+    padding: 10px 15px;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 25px;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.btns:hover {
+    background-color: #000;
+    color: white;
+}
+
+
+@-webkit-keyframes gateway {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gateway {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gateway {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
