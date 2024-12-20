@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: #fff;
+    text-decoration: inherit;
+    font-family: 'Poppins';
+}
+
+.global-header {
+    position: fixed;
+    width: 100%;
+    min-height: 20px;
+    height: min-content;
+    padding: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .header-content {
+        width: max-content;
+        height: max-content;
+        padding: 15px 70px;
+        border-radius: 200px;
+
+        background-color: black;
+        text-align: center;
+        transition: background 0.5s ease;
+
+        .logo-txt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-txt a {
+            font-size: 20px;
+        }
+    }
+
+    .header-nav {
+        width: min-content;
+        height: max-content;
+        padding: 15px;
+        border-radius: 200px;
+
+        background-color: black;
+        display: flex;
+        gap: 20px;
+
+        align-items: center;
+        justify-content: flex-end;
+
+        .nav-items {
+            font-size: 20px;
+            width: min-content;
+            height: max-content;
+        }
+    }
+}
+
+.header-content:hover {
+    background: linear-gradient(270deg, #c866ff, #7174ff, #ffb8b8);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    }
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+
+    /* background: linear-gradient(123deg,#000000,#0f0717,#190232); */
+    background-size: 180% 180%;
+    animation: homesection 27s ease infinite;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .playground-div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .playground-div p {
+            color: black;
+        }
+    }
+}
+@keyframes homesection {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media screen and (max-width: 900px) {
+    .global-header {
+        flex-direction: column;
+    }
+
+    .header-content {
+        width: 50%;
+        height: auto;
+    }
+
+    .header-nav {
+        width: 50%;
+        height: auto;
+    }
+
+    .logo-txt a {
+        font-size: 10px;
+    }
+
+    #playground-lottie {
+        width: 100px;
+    }
+}
